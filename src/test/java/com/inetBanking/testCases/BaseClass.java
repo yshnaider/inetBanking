@@ -1,4 +1,4 @@
-package com.inetbanking.testCases;
+package com.inetBanking.testCases;
 
 import java.io.File;
 import java.io.IOException;

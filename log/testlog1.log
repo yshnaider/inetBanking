@@ -1,0 +1,4 @@
+2021-09-18 22:52:18,214 [main] INFO ebanking - URL is opened
+2021-09-18 22:52:18,309 [main] INFO ebanking - Entered username
+2021-09-18 22:52:18,390 [main] INFO ebanking - Entered password
+2021-09-18 22:52:19,119 [main] INFO ebanking - Login test passed
