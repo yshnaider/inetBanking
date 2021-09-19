@@ -31,19 +31,19 @@ public class BaseClass {
 
     public static Logger logger;
 
-    @Parameters("browser")
+    //@Parameters("browser")
     @BeforeClass
-    public void setup(String br)
+    public void setup()
     {
         logger = Logger.getLogger("ebanking");
         PropertyConfigurator.configure("Log4j.properties");
 
-        if(br.equals("chrome"))
-        {
+        /*if(br.equals("chrome"))
+        {*/
             System.setProperty("webdriver.chrome.driver",readconfig.getChromePath());
             driver=new ChromeDriver();
-        }
-        else if(br.equals("firefox"))
+       /* }*/
+       /* else if(br.equals("firefox"))
         {
             System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxPath());
             driver = new FirefoxDriver();
@@ -52,7 +52,7 @@ public class BaseClass {
         {
             System.setProperty("webdriver.ie.driver",readconfig.getIEPath());
             driver = new InternetExplorerDriver();
-        }
+        }*/
 
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
         driver.get(baseURL);

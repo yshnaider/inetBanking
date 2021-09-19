@@ -64,7 +64,7 @@ public class TC_LoginDDT_002 extends BaseClass
 
 
     @DataProvider(name="LoginData")
-    String [][] getData() throws IOException
+    public String [][] getData() throws IOException
     {
         String path=System.getProperty("user.dir")+"/src/test/java/com/inetBanking/testData/LoginData.xlsx";
 
